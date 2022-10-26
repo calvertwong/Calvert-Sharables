@@ -1,0 +1,15 @@
+node_modules
+build
+.history
+.babelrc
+.eslintrc
+.npmrc
+.prettierrc
+README.md
+.github
+shell
+config-overrides.js
+tsconfig.json
+tsconfig.build.json
+.storybook
+.babelrcjs

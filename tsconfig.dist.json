@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "outDir": "./dist",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "declaration": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,8 +15,8 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "sourceMap": true
+    "noEmit": false,
+    "jsx": "react-jsx"
   },
-  "exclude": ["dist"]
+  "exclude": ["shell", "stories", "test", "config-overrides.js"]
 }

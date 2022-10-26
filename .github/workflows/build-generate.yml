@@ -1,0 +1,32 @@
+name: Build Calvert Shareables
+
+on:
+  push:
+    branches:
+      - staging
+  pull_request:
+    branches:
+      - "*"
+
+jobs:
+  build:
+    name: Generate build for shareables
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install NPM packages
+        run: npm ci
+
+    # - name: Run tests
+    #   run: npm run build-test
+
+    # - name: Generate build folder
+    #   run: npm run build
